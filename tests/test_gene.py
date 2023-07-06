@@ -3,6 +3,7 @@ from sqlalchemy import create_engine
 
 from models.gene import Gene
 
+
 def test_gene_model(dbsession):
     # Create a test gene
     gene = Gene(name="Gene1", gene_id="12345", aliases="Alias1, Alias2")
